@@ -8,14 +8,25 @@
     "splash": {
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.candidate.galleryapp"
+      "bundleIdentifier": "com.candidate.galleryapp",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow GalleryApp to save images to your photo library.",
+        "NSPhotoLibraryAddUsageDescription": "Allow GalleryApp to save images to your photo library."
+      }
     },
     "android": {
       "package": "com.candidate.galleryapp",
-      "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "plugins": [
       [
@@ -25,6 +36,11 @@
           "savePhotosPermission": "Allow GalleryApp to save images to your photo library."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ab79ed37-e692-4e87-ae29-d1f3584cf554"
+      }
+    }
   }
 }
