@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "GalleryApp",
+    "slug": "gallery-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.candidate.galleryapp"
+    },
+    "android": {
+      "package": "com.candidate.galleryapp",
+      "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow GalleryApp to save images to your photo library.",
+          "savePhotosPermission": "Allow GalleryApp to save images to your photo library."
+        }
+      ]
+    ]
+  }
+}
